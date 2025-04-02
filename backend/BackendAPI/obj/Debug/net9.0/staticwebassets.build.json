@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "Y1LykFuhpHGy7gtrArrzjK7Y17CQ9hBwEi+WSXgFOpg=",
+  "Source": "BackendAPI",
+  "BasePath": "_content/BackendAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BackendAPI/wwwroot",
+      "Source": "BackendAPI",
+      "ContentRoot": "/Users/vidhikdang/development/BsesForm/backend/BackendAPI/wwwroot/",
+      "BasePath": "_content/BackendAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/vidhikdang/development/BsesForm/backend/BackendAPI/wwwroot/uploads/ef00d016-de75-47cb-b425-bc9dbdda0d05.jpg",
+      "SourceId": "BackendAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/vidhikdang/development/BsesForm/backend/BackendAPI/wwwroot/",
+      "BasePath": "_content/BackendAPI",
+      "RelativePath": "uploads/ef00d016-de75-47cb-b425-bc9dbdda0d05#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bfsa7taa24",
+      "Integrity": "mTapnSTbnTnLqsTXzSqvCKNbzFKsFs+jheu+Hk5F14Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/ef00d016-de75-47cb-b425-bc9dbdda0d05.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/ef00d016-de75-47cb-b425-bc9dbdda0d05.bfsa7taa24.jpg",
+      "AssetFile": "/Users/vidhikdang/development/BsesForm/backend/BackendAPI/wwwroot/uploads/ef00d016-de75-47cb-b425-bc9dbdda0d05.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17457505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mTapnSTbnTnLqsTXzSqvCKNbzFKsFs+jheu+Hk5F14Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 09:15:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bfsa7taa24"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ef00d016-de75-47cb-b425-bc9dbdda0d05.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mTapnSTbnTnLqsTXzSqvCKNbzFKsFs+jheu+Hk5F14Y="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ef00d016-de75-47cb-b425-bc9dbdda0d05.jpg",
+      "AssetFile": "/Users/vidhikdang/development/BsesForm/backend/BackendAPI/wwwroot/uploads/ef00d016-de75-47cb-b425-bc9dbdda0d05.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17457505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mTapnSTbnTnLqsTXzSqvCKNbzFKsFs+jheu+Hk5F14Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 09:15:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mTapnSTbnTnLqsTXzSqvCKNbzFKsFs+jheu+Hk5F14Y="
+        }
+      ]
+    }
+  ]
+}

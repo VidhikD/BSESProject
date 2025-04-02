@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/vidhikdang/development/BsesForm/backend/BackendAPI/wwwroot/uploads/ef00d016-de75-47cb-b425-bc9dbdda0d05.jpg",
+      "PackagePath": "staticwebassets/uploads/ef00d016-de75-47cb-b425-bc9dbdda0d05.jpg"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.BackendAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.BackendAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.BackendAPI.props",
+      "PackagePath": "build\\BackendAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.BackendAPI.props",
+      "PackagePath": "buildMultiTargeting\\BackendAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.BackendAPI.props",
+      "PackagePath": "buildTransitive\\BackendAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

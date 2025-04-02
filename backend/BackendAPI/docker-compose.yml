@@ -1,0 +1,52 @@
+volumes:
+  mssql_data: {}
+
+services:
+  # SQL Server Service
+  sqlserver:
+    image: mcr.microsoft.com/azure-sql-edge:1.0.7  # ✅ Use official image
+    user: "0:0"
+    container_name: sqlserver2
+    platform: linux/arm64
+    environment:
+      SA_PASSWORD: "YourStrong!Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    networks:
+      - backend-network
+    volumes:
+      - mssql_data:/var/opt/mssql
+      - ./mssql/mssql.conf:/var/opt/mssql/mssql.conf
+    restart: always
+
+  # Backend Service
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: backend-api
+    container_name: backend
+    platform: linux/arm64/v8
+    environment:
+      # ✅ Database Connection
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=bsesform;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;"
+      
+      # ✅ Set Development Environment
+      ASPNETCORE_ENVIRONMENT: Development
+
+      # ✅ Expose Swagger in Production
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      DOTNET_RUNNING_IN_CONTAINER: "true"
+      DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: "false"
+    
+    ports:
+      - "5002:8080"
+    networks:
+      - backend-network
+    depends_on:
+      - sqlserver
+
+networks:
+  backend-network:
+    driver: bridge
