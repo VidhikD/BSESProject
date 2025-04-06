@@ -6,29 +6,29 @@ namespace BackendAPI.DTOs
     public class ComplaintDTO
     {
         [Required]
-        public string CANumber { get; set; }
+        public string? CANumber { get; set; }
 
         [Required]
-        public string Division { get; set; }
+        public string? Division { get; set; }
 
         [Required]
-        public string ComplainantName { get; set; }
+        public string? ComplainantName { get; set; }
 
         [Required]
         [Phone]
-        public string ComplainantMobileNo { get; set; }
+        public string? ComplainantMobileNo { get; set; }
 
         [Required]
-        public string RelationWithCustomer { get; set; }
+        public string? RelationWithCustomer { get; set; }
 
         [Required]
-        public string ComplaintType { get; set; }
+        public string? ComplaintType { get; set; }
 
         [Required]
-        public string ComplaintAgainst { get; set; }
+        public string? ComplaintAgainst { get; set; }
 
         [Required]
-        public string ComplaintBrief { get; set; }
+        public string? ComplaintBrief { get; set; }
 
         public bool BsesConnected { get; set; } = false;
 

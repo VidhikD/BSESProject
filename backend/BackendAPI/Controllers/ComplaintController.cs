@@ -124,50 +124,5 @@ namespace BackendAPI.Controllers
 
             return $"/uploads/{fileName}"; // Return relative file path
         }
-
-        // ✅ Submit complaint for existing user
-        [HttpPost("submitExistingUser")]
-        [SwaggerOperation(Summary = "Submit complaint for existing user", Description = "Allows an existing user to submit a complaint after CA verification.")]
-        [ProducesResponseType(201)]
-        [ProducesResponseType(400)]
-        public async Task<IActionResult> SubmitExistingUserComplaint([FromForm] ComplaintDTO dto)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var existingComplaint = await _context.Complaints.FirstOrDefaultAsync(c => c.CANumber == dto.CANumber);
-            if (existingComplaint == null)
-            {
-                return NotFound(new { message = "CA Number not found. Please register as a new user." });
-            }
-
-            var filePath = await SaveFile(dto.UploadDocument); // ✅ Save file if provided
-
-            var complaint = new Complaint
-            {
-                FullName = dto.FullName,
-                CANumber = dto.CANumber,
-                Division = dto.Division,
-                ComplainantName = dto.ComplainantName,
-                ComplainantMobileNo = dto.ComplainantMobileNo,
-                RelationWithCustomer = dto.RelationWithCustomer,
-                ComplaintType = dto.ComplaintType,
-                ComplaintAgainst = dto.ComplaintAgainst,
-                ComplaintBrief = dto.ComplaintBrief,
-                DepartmentName = dto.DepartmentName,
-                RequestNo = dto.RequestNo,  // ✅ Matches Complaint.cs, DTO, and database
-                BsesConnected = dto.BsesConnected,
-                Remarks = dto.BsesConnected ? dto.Remarks : "No remarks given", // ✅ Auto-set for 'No'
-                UploadDocument = filePath // ✅ Store file path
-            };
-
-            _context.Complaints.Add(complaint);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetComplaint), new { id = complaint.ComplaintId }, complaint);
-        }
-
     }
 }
