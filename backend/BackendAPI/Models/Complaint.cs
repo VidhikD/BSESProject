@@ -10,7 +10,6 @@ namespace BackendAPI.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ComplaintId { get; set; }
 
-
         public string? FullName { get; set; }  // ✅ Optional
 
         [Required]

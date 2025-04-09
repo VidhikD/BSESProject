@@ -1,1 +1,12 @@
 .env
+# Build
+bin/
+obj/
+*.dll
+*.pdb
+
+# Static files
+wwwroot/uploads/
+
+# Configs with secrets
+appsettings.Development.json
