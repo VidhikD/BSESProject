@@ -41,3 +41,10 @@ Edit
 
 ##📸 Screenshots
 
+<img width="1500" alt="Screenshot 2025-04-09 at 1 42 28 PM" src="https://github.com/user-attachments/assets/730c9006-65f2-4c07-8041-77b97af6dacb" />
+<img width="1512" alt="Screenshot 2025-04-09 at 1 43 05 PM" src="https://github.com/user-attachments/assets/616e8bb3-ed4c-4f2e-b1dc-3a745faa0e38" />
+<img width="1512" alt="Screenshot 2025-04-09 at 1 43 16 PM" src="https://github.com/user-attachments/assets/591fab86-1af0-4fb8-952b-4cd430ade843" />
+
+
+
+
